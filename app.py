@@ -93,4 +93,4 @@ def index_page():
 # შემდეგ app.run() გაუშვებს აპლიკაციას დეფოლტ პორტზე 127.0.0.1:5000
 with app.app_context():
     db.create_all()
-    app.run()
+    app.run(port=8081)
